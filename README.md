@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+This project is a Real-Time Weather Monitoring System built using React.js and Material-UI that fetches real-time weather data from the OpenWeatherMap API. It processes and displays weather data such as temperature, feels-like temperature, and the main weather condition for specific cities. The system also provides daily weather summaries with rollups and aggregates, as well as configurable weather alerts for specific thresholds.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Real-time Weather Data:
 
-## Available Scripts
+Fetches current weather conditions such as temperature, feels-like temperature, and weather condition (e.g., Clear, Rain, Snow) from the OpenWeatherMap API for major Indian cities.
 
-In the project directory, you can run:
+Daily Weather Summary:
+Displays rollup and aggregates for the day, including:
+Average temperature
+Maximum temperature
+Minimum temperature
+Dominant weather condition
+Weather Alerts:
 
-### `npm start`
+User-configurable alert thresholds based on temperature.
+Alerts when the temperature exceeds a defined threshold (e.g., 35°C).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Responsive Design:
+The UI is responsive and visually appealing, built using Material-UI components for a modern look and feel.
+Animations are used to enhance the user experience.
+Visual Components:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Weather data cards showing real-time temperature, feels-like temperature, and weather condition.
+Weather summary displays key statistics for the day.
+Alerts are shown when weather conditions breach user-defined thresholds.
 
-### `npm test`
+Demo : 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Installation
+To run the project locally, follow the steps below:
 
-### `npm run build`
+Prerequisites
+Node.js 
+npm 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+->Setup
+Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* git clone https://github.com/your-username/weather-monitoring-system.git
+* cd weather-monitoring-system
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+->Install the dependencies:
+npm install
+npm i axios
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/icons-material
+npm install framer-motion 
 
-### `npm run eject`
+Start the development server:
+* npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-> File Structure:
+The project is structured as follows:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+├── public
+│   ├── index.html
+├── src
+│   ├── WeatherCard.js
+│   ├── WeatherSummary.js
+│   ├── WeatherAlert.js
+│   ├── App.js
+│   ├── index.js
+│   ├── App.css
+│   └── apiKeys.js
+├── README.md
+├── package.json
