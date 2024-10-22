@@ -14,7 +14,7 @@ Dominant weather condition
 Weather Alerts:
 
 User-configurable alert thresholds based on temperature.
-Alerts when the temperature exceeds a defined threshold (e.g., 35°C).
+Alerts when the temperature exceeds a defined threshold (e.g., 35°C) in a interval of 5 minutes but user has to first set the threshold and update that.
 
 Responsive Design:
 The UI is responsive and visually appealing, built using Material-UI components for a modern look and feel.
@@ -37,7 +37,7 @@ npm
 ->Setup
 Clone the repository:
 
-* git clone https://github.com/your-username/weather-monitoring-system.git
+* git clone https://github.com/21BCS035/Real-time-weather-monitoring.git
 * cd weather-monitoring-system
 
 ->Install the dependencies:
@@ -50,18 +50,3 @@ npm install framer-motion
 Start the development server:
 * npm start
 
--> File Structure:
-The project is structured as follows:
-
-├── public
-│   ├── index.html
-├── src
-│   ├── WeatherCard.js
-│   ├── WeatherSummary.js
-│   ├── WeatherAlert.js
-│   ├── App.js
-│   ├── index.js
-│   ├── App.css
-│   └── apiKeys.js
-├── README.md
-├── package.json
